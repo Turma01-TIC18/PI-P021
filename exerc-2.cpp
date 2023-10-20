@@ -77,6 +77,15 @@ int main() {
     Usuario::RegistrarUsuario("Usuario 1");
     Usuario::RegistrarUsuario("Usuario 2");
 
+    Livro::EmprestarLivro("Livro 1", "Autor 1", "Usuário 1");
+    Livro::EmprestarLivro("Livro 2", "Autor 2", "Usuário 1");
+
+    cout << "Livros disponíveis na biblioteca:\n";
+    Livro::ListarLivros();
+
+    cout << "\nLivros emprestados por Usuário 1:\n";
+    Livro::ListarLivrosEmprestadosPorUsuario("Usuário 1");
+
     
 
     cout << " " << endl;
