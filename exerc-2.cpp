@@ -17,11 +17,11 @@ public:
         livros.push_back(Livro(titulo, autor, copias_disponiveis));
     }
 
-    //Emprestar livro
+    //Código para emprestar livro
 
-    //Listar livros
+    //Código para listar livro
 
-    //listar livros por usuário
+    //Código para listar livros por usuário
 
 private:
     string titulo;
@@ -56,10 +56,10 @@ private:
 vector<Usuario> Usuario::usuarios;
 
 int main() {
-
+    //testar funcionalidade testar adicionar livros
     Livro::AdicionarLivro("Livro 1", "Autor 1", 3);
     Livro::AdicionarLivro("Livro 2", "Autor 2", 2);
-
+    // testar funcionalidade Registrar Usuario
     Usuario::RegistrarUsuario("Usuario 1");
     Usuario::RegistrarUsuario("Usuario 2");
 
