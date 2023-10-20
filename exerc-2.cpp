@@ -17,8 +17,17 @@ public:
         livros.push_back(Livro(titulo, autor, copias_disponiveis));
     }
 
-    //Código para emprestar livro
-
+    static bool EmprestarLivro(const string& titulo, const string& autor, const string& usuario) {
+        for (Livro& livro : livros) {
+            if (livro.getTitulo() == titulo && livro.autor == autor && livro.copias_disponiveis > 0) {
+                livro.copias_disponiveis--;
+                emprestimos.push_back({titulo, autor, usuario});
+                return true;
+            }
+        }
+        return false;
+    }
+    
     //Código para listar livro
 
     //Código para listar livros por usuário
