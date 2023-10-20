@@ -12,8 +12,10 @@ public:
     string getTitulo() const {
         return titulo;
     }
-
-    //adicionar livro
+    
+    static void AdicionarLivro(const string& titulo, const string& autor, int copias_disponiveis) {
+        livros.push_back(Livro(titulo, autor, copias_disponiveis));
+    }
 
     //Emprestar livro
 
