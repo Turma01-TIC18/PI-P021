@@ -28,7 +28,12 @@ public:
         return false;
     }
     
-    //Código para listar livro
+    static void ListarLivros() {
+        for (const Livro& livro : livros) {
+            cout << "Título: " << livro.titulo << ", Autor: " << livro.autor
+                      << ", Copias Disponíveis: " << livro.copias_disponiveis << endl;
+        }
+    }
 
     //Código para listar livros por usuário
 
