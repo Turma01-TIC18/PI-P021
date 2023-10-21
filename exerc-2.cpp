@@ -35,7 +35,14 @@ public:
         }
     }
 
-    //Código para listar livros por usuário
+ static void ListarLivrosEmprestadosPorUsuario(const string& usuario) {
+        for (const auto& emprestimo : emprestimos) {
+            if (emprestimo.usuario == usuario) {
+                cout << "Título: " << emprestimo.titulo << ", Autor: " << emprestimo.autor << endl;
+            }
+        }
+    }
+
 
 private:
     string titulo;
